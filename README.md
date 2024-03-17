@@ -8,4 +8,11 @@ To run this project, You need to meet the following requirements:
 4. Android device require above Android 7.0
 
 below content is screenshot:
+![Image text](/shot/book_list_home_has_data.png)
+![Image text](/shot/add_book_match_require.png)
 ![Image text](/shot/add_book_less_require.png)
+![Image text](/shot/add_bopok_error.png)
+![Image text](/shot/book_detail_update_after.png)
+![Image text](/shot/book_info_update.png)
+![Image text](/shot/book_detail_update_before.png)
+![Image text](/shot/del_book_confirm_dialog.png)
