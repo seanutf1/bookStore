@@ -15,7 +15,7 @@
     <string name="item_entry_title">Add Item</string>
     <string name="book_entry_title">Add Book</string>
     <string name="item_name_req">Item Name*</string>
-    <string name="book_title_req">Book Name*</string>
+    <string name="book_title_req">Book Title*</string>
     <string name="item_price_req">Item Price*</string>
     <string name="book_author_req">Book Author*</string>
     <string name="book_isbn_req">Book ISBN NUM*</string>

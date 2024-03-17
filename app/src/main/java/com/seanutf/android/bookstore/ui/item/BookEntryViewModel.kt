@@ -19,7 +19,14 @@ class BookEntryViewModel(private val booksRepository: BooksRepository) : ViewMod
 
     private fun validateInput(uiState: BookDetails = bookUiState.bookDetails): Boolean {
         return with(uiState) {
-            title.isNotBlank() && author.isNotBlank() && publishYear > 0 && ISBN.isNotBlank()
+            title.isNotBlank()
+                    && isTitleValid
+                    && author.isNotBlank()
+                    && isAuthorValid
+                    && publishYear > 0
+                    && isPublishYearValid
+                    && ISBN.isNotBlank()
+                    && isISBNValid
         }
     }
 
@@ -38,9 +45,13 @@ data class BookUiState(
 data class BookDetails(
     val id: Int = 0,
     val title: String = "",
+    val isTitleValid: Boolean = true,
     val author: String = "",
+    val isAuthorValid: Boolean = true,
     val publishYear: Int = 0,
+    val isPublishYearValid: Boolean = true,
     val ISBN: String = "",
+    val isISBNValid: Boolean = true,
 )
 
 fun BookDetails.toBook(): Book = Book(

@@ -223,7 +223,17 @@ fun ItemDetailsScreenPreview() {
     BookStoreApplicationTheme {
         ItemDetailsBody(
             BookDetailsUiState(
-                bookDetails = BookDetails(1, "Men Game", "Sean Eil", 2024, "978-1-104-56434-9"),
+                bookDetails = BookDetails(
+                    id = 1,
+                    title = "Men Game",
+                    isTitleValid = true,
+                    author = "Sean Eil",
+                    isAuthorValid = true,
+                    publishYear = 2024,
+                    isPublishYearValid = true,
+                    ISBN = "978-1-104-56434-9",
+                    isISBNValid = true
+                ),
             ),
             onDelete = {}
         )
